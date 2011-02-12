@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title Brent Fitzgerald - Portfolio 
+  %body
+    = yield
+
+
+
+!!!
+%html
+  %head
+    %title Brent Fitzgerald
+    %meta{:content => "Designer/developer at Sifteo, co-founder of Taco Lab, friend of plants and bicycles.", 
+          :name => "description"}
+    %meta{:content => "brent fitzgerald, taco lab, tacolab, mit, media lab, sifteo, siftables, design, technology, digital, network, physical language workshop, plw", 
+          :name => "keywords"}
+    %link{:href => "favicon16.png", :rel => "shortcut icon"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold", :rel => "stylesheet", :type => "text/css"}
+    -#%link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic", :rel => "stylesheet", :type => "text/css"}
+    = stylesheets
+  %body
+    #page
+      = yield
+
+
+    %script{:charset => "utf-8", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js", :type => "text/javascript"}
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-452652-1");
+      pageTracker._setDomainName(".brentfitzgerald.com");
+      pageTracker._trackPageview();
+      } catch(err) {}
+
