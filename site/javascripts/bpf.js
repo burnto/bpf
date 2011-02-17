@@ -1,7 +1,6 @@
 (function() {
-  var portfolioSectionSelector = "#portfolio section";
   
-  var setupSectionSlideshow = function(index) {
+  var setupSectionSlideshow = function() {
     var section = $(this);
     var slideshowContainer = section.find(".slideshow");
     if(slideshowContainer.length) {
@@ -10,10 +9,11 @@
       if(!navContainer.length) {
         navContainer = $("<p></p>").addClass("nav").appendTo(content);
       }
-      var pagerSelector = portfolioSectionSelector + ":eq(" + index + ") .content .nav";
       slideshowContainer.cycle({
-        next: slideshowContainer,
-        pager: pagerSelector
+        fx:    "scrollHorz",
+        // speed: 1000,
+        next:  slideshowContainer,
+        pager: navContainer
       }).cycle('pause')
     }
   }
@@ -28,7 +28,7 @@
   
   $(function() {
     // setup slideshow
-    $(portfolioSectionSelector)
+    $("#portfolio section")
       .each(setupSectionSlideshow)
       .hover(sectionMouseOver, sectionMouseOut)
   })  

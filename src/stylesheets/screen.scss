@@ -18,62 +18,56 @@ html, body {
   margin: 50px 5px;
 }
 
-#portfolio {
-/*  height: 400px;*/
-}
 
 #portfolio section {
-//  padding: 20px;
-  margin-bottom: 60px;
-/*  height: 100%;*/
-//  overflow: auto;
-}
-#portfolio section:hover {
-//  background-color: #e6e6e6;
-}
+  padding: 60px 0 30px;
+  width: auto;
+  clear: both;
 
-#portfolio section .media {
-  display: block;
-  max-width: 610px;
-  float: left;
-  margin: 5px 5px 10px;
-}
+  .media {
+    display: block;
+    max-width: 610px;
+    float: left;
+    margin: 5px 5px 10px;
+    max-height: 500px;
+    overflow: hidden;
+    border: 1px solid #ccc;
 
-#portfolio section .media img {
-  -moz-box-shadow: 0 3px 7px #888;
-  -webkit-box-shadow: 0 3px 7px #888;
-  box-shadow: 0 3px 7px #888;  
-}
-
-#portfolio section .content {
-  padding-top: 10px;
-  margin-left: 640px;
-  max-width: 40em;
-  min-width: 20em;
-}
-
-#portfolio section .content .nav a {
-  margin-right: .5em;
-  display: block;
-  text-indent: -1000px;
-  float: left;
-  height: 1em;
-  width: 1em;
-  background-color: #ddd;
-  color: #999;
-//  border: 1px solid #999;
-  text-decoration: none;
-  
-  &.activeSlide {
-    background-color: #bbb;
-    color: #666;
-    &:hover {
-      background-color: #bbb;
-    }
+    box-shadow: 0 3px 7px #888;  
+    -moz-box-shadow: 0 3px 7px #888;
+    -webkit-box-shadow: 0 3px 7px #888;
   }
   
-  &:hover {
-    background-color: yellow;
+  .content {
+    padding-top: 10px;
+    margin-left: 640px;
+    max-width: 40em;
+    min-width: 20em;
+
+    .nav a {
+      margin-right: .5em;
+      display: block;
+      text-indent: -1000px;
+      float: left;
+      height: 1em;
+      width: 1em;
+      background-color: #ddd;
+      color: #999;
+    //  border: 1px solid #999;
+      text-decoration: none;
+
+      &.activeSlide {
+        background-color: #bbb;
+        color: #666;
+        &:hover {
+          background-color: #bbb;
+        }
+      }
+
+      &:hover {
+        background-color: yellow;
+      }
+    }
   }
 }
 
