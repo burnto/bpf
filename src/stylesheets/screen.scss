@@ -22,7 +22,6 @@ h2 {
   margin: 50px 5px;
 }
 
-
 #portfolio section {
 //  padding: 30px 0;
   width: 100%;
@@ -85,6 +84,12 @@ h2 {
     max-width: 40em;
     min-width: 20em;
 
+  }
+}
+#bio {
+  width: 50em;
+  .links a {
+    margin-right: 10px;
   }
 }
 
