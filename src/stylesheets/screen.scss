@@ -25,18 +25,53 @@ html, body {
   clear: both;
 
   .media {
-    display: block;
     max-width: 610px;
     float: left;
     margin: 5px 5px 10px;
-    max-height: 500px;
-    overflow: hidden;
-    border: 1px solid #ccc;
+    .slideshow {
+      overflow: hidden;
+      height: 408px;
+      width: 610px;
+      border: 1px solid #ccc;
 
-    box-shadow: 0 3px 7px #888;  
-    -moz-box-shadow: 0 3px 7px #888;
-    -webkit-box-shadow: 0 3px 7px #888;
+      box-shadow: 0 3px 7px #888;  
+      -moz-box-shadow: 0 3px 7px #888;
+      -webkit-box-shadow: 0 3px 7px #888;
+      cursor: pointer;
+    }    
+    .nav {
+      margin: 12px 0 0 1px;
+      text-align: center;
+      a {
+        margin-right: .2em;
+        display: block;
+        text-indent: -1000px;
+        float: left;
+        height: 1.3em;
+        width: 1.3em;
+        background-color: #ddd;
+        color: #999;
+      //  border: 1px solid #999;
+        text-decoration: none;
+
+        &.activeSlide {
+          background-color: #bbb;
+          color: #666;
+          &:hover {
+            background-color: #bbb;
+          }
+        }
+
+        &:hover {
+          background-color: yellow;
+        }
+      }
+    }
+
+
   }
+
+
   
   .content {
     padding-top: 10px;
@@ -44,30 +79,6 @@ html, body {
     max-width: 40em;
     min-width: 20em;
 
-    .nav a {
-      margin-right: .5em;
-      display: block;
-      text-indent: -1000px;
-      float: left;
-      height: 1em;
-      width: 1em;
-      background-color: #ddd;
-      color: #999;
-    //  border: 1px solid #999;
-      text-decoration: none;
-
-      &.activeSlide {
-        background-color: #bbb;
-        color: #666;
-        &:hover {
-          background-color: #bbb;
-        }
-      }
-
-      &:hover {
-        background-color: yellow;
-      }
-    }
   }
 }
 

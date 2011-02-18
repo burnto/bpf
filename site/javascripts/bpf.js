@@ -7,12 +7,13 @@
       var content = section.find(".content");
       var navContainer = content.find('.nav');
       if(!navContainer.length) {
-        navContainer = $("<p></p>").addClass("nav").appendTo(content);
+        navContainer = $("<p></p>").addClass("nav").appendTo(section.find(".media"));
       }
       slideshowContainer.cycle({
-        fx:    "scrollHorz",
+        fx:    "fade",
+        timeout: 0,
         // speed: 1000,
-        next:  slideshowContainer,
+        next:  slideshowContainer.find("img"),
         pager: navContainer
       }).cycle('pause')
     }
