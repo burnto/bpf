@@ -8,43 +8,40 @@
   %section
     .media
       .slideshow
+        = img "portfolio/sifteo_logo.png"
         = img "portfolio/sifteo.jpg"
+        = img "portfolio/sifteo_siftrunner.jpg"
+        = img "portfolio/sifteo_01.png"
     .content
       %h2 Sifteo
       %p Founding team member of a $10MM venture-backed and NSF-funded start-up creating a game platform using distributed sensor network technology. 
-      %p Led product design for all software components of the product: marketing site, app store, multi-platform desktop software, simulator, SDK+API. Website had 42K visits in the first week, with initial pre-order production run sold out in 12 hours. 
-      %p 2009 - Present
+      %p As Software Director, led and managed product design and development for all software components of the product: marketing site, app store, multi-platform desktop software, simulator, SDK+API. Also led visual and identity design (logo, business cards, T-shirts, marketing materials), and interaction design.
+      %p Website had 42K visits in the first week, and the initial pre-order production run sold out in 12 hours. 
+      %p= link_to "sifteo.com", "https://www.sifteo.com/" 
 
   %section
     .media
       .slideshow
+        = img "portfolio/tacolab/postcard.png"
         = img "portfolio/tacolab.jpg"
+        = img "portfolio/tacolab/process.png"
     .content
       %h2 Taco Lab
       %p
-        Co-founded a hybrid design and engineering firm, specializing in interfaces and interactions spanning devices and the web. Projects included sensor technology applications, rapid device prototyping, interactive data visualization, non-profit social networking applications, and web system design and development. Clients included 
+        Founded in 2008, Taco Lab was a hybrid design and engineering firm, specializing in interfaces and interactions spanning devices and the web. 
+      %p 
+        Projects included sensor technology applications, rapid device prototyping, interactive data visualization, non-profit social networking applications, and web system design and development. Clients included 
         #{link_to "Hallmark", "http://hallmark.com"}
         #{link_to "Qixen-P", "http://www.qixen-p.com/"}
         #{link_to "UCSF", "http://ucsf.edu/"}
         #{link_to "Craigslist Foundation", "http://craigslistfoundation.org"},
         #{link_to "SPUR", "http://spur.org/"}, and 
         #{link_to "Sequoia Capital", "http://sequoiacap.com/"}.
-      %p Founded 2008.
-
-  %section
-    .media
-      .slideshow
-        = img "portfolio/spur01.png"
-        = img "portfolio/spur_controls_01.jpg"
-        = img "portfolio/spur_controls_02.jpg"
-        = img "portfolio/spur_controls_03.jpg"
-        = img "portfolio/spur_controls_04.jpg"
-        = img "portfolio/spur_nextbus.jpg"
-    .content
-      %h2 SPUR Grand Opening Exhibit
-      %p Taco Lab was selected to build an interactive urban data visualization for SPUR's grand opening exhibit.
-      %p 2009
-
+      %p
+        Our team from Taco Lab went on to found Sifteo in 2009.
+      %p= link_to "tacolab.com", "http://tacolab.com/" 
+      %p Founded in 2008
+        
   %section
     .media
       .slideshow
@@ -55,27 +52,73 @@
     .content
       %h2 Sequoia Capital
       %p
-        Led a targeted engagement for a radical and rapid rebuild of the Sequoia Capital website, live September 2009.
+        Led Taco Lab's targeted, radical, rapid rebuild of the Sequoia Capital website, live September 2009. Created information architecture, wireframes, and design comps. Implemented Rails-based website, provisioned servers, managed the project, and delivered on-time launch with Sequoia's largest traffic spike to date.
+      %p
+        = link_to "sequoiacap.com", "http://sequoiacap.com/" 
+        %br
+        (note that site has been modified since the Taco Lab engagement)
       %p 2009
 
   %section
     .media
       .slideshow
-        = img "portfolio/swivel/public.jpg"
-        = img "portfolio/swivel.jpg"
-        = img "portfolio/swivel/indicator.jpg"
-        = img "portfolio/swivel/search.jpg"
-        = img "portfolio/swivel/tickers_zoom_better.jpg"
-        = img "portfolio/swivel/paper.jpg"
+        = img "portfolio/iistv.png"
+        = img "portfolio/iistv_japan.png"
+        = img "portfolio/iistv_china.png"
     .content
-      %h2 Swivel
-      %p
-        Led hands-on design and implementation of SaS social data analysis and business intelligence platform. Developed visual and interaction standards, company identity, and marketing materials. Worked with engineers using agile development process and engaged in strategic planning with management.
-      %p 2007 - 2008
+      %h2 Is it safe to visit?
+      %p Created in collaboration with #{link_to "Andy Volk of Downtempo", "http://downtempo.net/"}, IISTV scrapes official government travel advisories to offer a per-country safety rating, updated daily.
+      %p= link_to "isitsafetovisit.com", "http://isitsafetovisit.com/"
+      %p 2008 - Present
 
   %section
     .media
       .slideshow
+        = img "portfolio/gentrify_screen.jpg"
+        = img "portfolio/gentrify_nytimes.jpg"
+    .content
+      %h2 Gentrify
+      %p Created in 48 hours for the 2008 Rails Rumble, Gentrify was a mashup of Yelp, Craigslist, and Google Maps that "helps the elite urban bourgeois find their natural habitats."
+      %p 
+        Collaborators: 
+        #{link_to "Huned Botee", "http://hunedbotee.com/"},
+        #{link_to "Visnu Pitiyanuvath", "http://twitter.com/visnup"},
+        #{link_to "Gerad Suyderhoud", "http://twitter.com/gerads" }
+
+  %section
+    .media
+      .slideshow
+        = img "portfolio/spur01.png"
+        = img "portfolio/spur_controls_01.jpg"
+        = img "portfolio/spur_controls_02.jpg"
+        = img "portfolio/spur_controls_03.jpg"
+        = img "portfolio/spur_nextbus.jpg"
+        = img "portfolio/spur_controls_04.jpg"
+    .content
+      %h2 SPUR Grand Opening Exhibit
+      %p Taco Lab was selected to build an interactive urban data visualization for the SPUR Urban Center 2009 grand opening exhibit.
+      %p Also an invited speaker at the SPUR Young Urbanist Salon.
+      %p Fall 2009
+      %p= link_to "spur.org", "http://spur.org/"
+
+  %section
+    .media
+      .slideshow
+        = img "portfolio/swivel.jpg"
+        = img "portfolio/swivel/public.jpg"
+        = img "portfolio/swivel/indicator.jpg"
+        = img "portfolio/swivel/search.jpg"
+        = img "portfolio/swivel/tickers_zoom_better.jpg"
+        -#= img "portfolio/swivel/paper.jpg"
+    .content
+      %h2 Swivel
+      %p
+        Led hands-on design and implementation of SaaS social data analysis and business intelligence platform. Developed visual and interaction standards, company identity, and marketing materials. Worked with engineers using agile development process and engaged in strategic planning with management.
+      %p 2007 - 2008
+
+  %section
+    .media
+      .pic
         = img "portfolio/yummy.png"
     .content
       %h2 Yummy Tag Timeline
@@ -85,21 +128,19 @@
           = link_to "Del.icio.us", "http://delicious.com/"
           data, for exploration of tag trends over time.
         %p
-          = link_to "http://yummy.tacolab.com/"
+          2006 - Present
         %p
-          Created 2006.
+          = link_to "yummy.tacolab.com", "http://yummy.tacolab.com/"
 
   %section
     .media
-      .slideshow
+      .pic
         = img "portfolio/tiny.png"
     .content
       %h2 Tiny Icon Factory
       %p
         %p
-          An online gallery and studio for creation of 13x13 pixel, black and white icons. Running for 4 years with over 248K anonymous and uncensored contributions, Tiny is an ongoing exploration of creative expression. Built by
-          %a{:href => "/about/Brent_Fitzgerald"} Brent Fitzgerald
-          in collaboration with
+          An online gallery and studio for creation of 13x13 pixel, black and white icons. Running for 4 years with over 248K anonymous and uncensored contributions, Tiny is an ongoing exploration of creative expression. Built by in collaboration with
           %a{:href => "http://black.mitplw.com/"} Luis Blackaller
           in the
           %a{:href => "http://plw.media.mit.edu/"} Physical Language Workshop
@@ -121,24 +162,35 @@
           and other design blogs and news sites. Also included in the
           %em Delight by Design
           show at the MIT Museum.
+        %p 2006 - Present
         %p
-          = link_to "http://tiny.tacolab.com/"
+          = link_to "tiny.tacolab.com", "http://tiny.tacolab.com/"
+
+  -#
+    %section
+      .media
+        .pic
+          = img "portfolio/stanford_aim.jpg"
+      .content
+        %h2 The Law: A Wayward Engineer's Status Report
+        %p
+          Designed and developed interactive visualizations, course software systems, and game-based learning at the Stanford School of Medicine. Consulted across departments and labs, including SUMMIT (with funding from PATH via Gates Foundation), Stanford Biodesign, and Glaser Pediatric Research Network.
+        %p 2001 - 2004
+
 
   %section
     .media
-      .slideshow
+      .pic
         = img "portfolio/openstudio.jpg"
     .content
       %h2 OPENSTUDIO
       %p
-        OPENSTUDIO was created by the
+        Created by the
         %a{:href => "http://plw.media.mit.edu/"} Physical Language Workshop
         led by
         %a{:href => "http://www.maedastudio.com/"} John Maeda
         at the
-        = succeed "." do
-          %a{:href => "http://www.media.mit.edu/"} MIT Media Lab
-        Participants created and sold artwork in an online marketplace using a virtual currency.
+        #{link_to "MIT Media Lab", "http://www.media.mit.edu/"}, OPENSTUDIO articipants created and sold artwork in an online marketplace using a virtual currency.
       %p
         OPENSTUDIO was a collaboration among
         = succeed "," do
@@ -155,13 +207,14 @@
         = succeed "." do
           %a{:href => "http://kellegous.com"} Kelly Norton
       %p 2005 - 2008
+      %p= link_to "plw.media.mit.edu", "http://plw.media.mit.edu/" 
 
   %section
     .media
-      .slideshow
+      .pic
         = img "portfolio/stanford_aim.jpg"
     .content
-      %h2 Educational Media Design
+      %h2 Educational Media Design,<br/>Stanford School of Medicine
       %p
         Designed and developed interactive visualizations, course software systems, and game-based learning at the Stanford School of Medicine. Consulted across departments and labs, including SUMMIT (with funding from PATH via Gates Foundation), Stanford Biodesign, and Glaser Pediatric Research Network.
       %p 2001 - 2004

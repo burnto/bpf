@@ -10,6 +10,10 @@ html, body {
   background-color: #f0f0f0;
 }
 
+h2 {
+  line-height: 140%;
+}
+
 #page {
   margin: 30px;
 }
@@ -20,15 +24,17 @@ html, body {
 
 
 #portfolio section {
-  padding: 60px 0 30px;
-  width: auto;
-  clear: both;
+//  padding: 30px 0;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
 
   .media {
     max-width: 610px;
     float: left;
     margin: 5px 5px 10px;
-    .slideshow {
+    .slideshow, .pic {
+      background-color: white;
       overflow: hidden;
       height: 408px;
       width: 610px;
@@ -37,8 +43,10 @@ html, body {
       box-shadow: 0 3px 7px #888;  
       -moz-box-shadow: 0 3px 7px #888;
       -webkit-box-shadow: 0 3px 7px #888;
+    }
+    .slideshow {
       cursor: pointer;
-    }    
+    }
     .nav {
       margin: 12px 0 0 1px;
       text-align: center;
@@ -49,16 +57,14 @@ html, body {
         float: left;
         height: 1.3em;
         width: 1.3em;
-        background-color: #ddd;
-        color: #999;
-      //  border: 1px solid #999;
+        background-color: rgba(0,152,231,0.5);
         text-decoration: none;
 
         &.activeSlide {
-          background-color: #bbb;
+          background-color: rgba(0,152,231,1);
           color: #666;
           &:hover {
-            background-color: #bbb;
+            background-color: rgba(0,152,231,1);
           }
         }
 
