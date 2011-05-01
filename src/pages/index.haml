@@ -1,14 +1,12 @@
 :ruby
 
-#bio
+%article.narrow
   %section
-    %h1
-      Brent Fitzgerald
     %p
       I'm the Director of Engineering at
       = succeed "," do
         %a{:href => "https://www.card.io/"} card.io
-      where I'm part of an awesome small team designing and developing the future of payments.
+      where I work with a great team designing and developing payments for our mobile era.
     %p Previously:
     %ul
       %li
@@ -29,13 +27,18 @@
         Designer at the
         = link_to "Stanford School of Medicine", "http://med.stanford.edu/"
       %li
-        Hapless undergraduate in
+        Undergraduate in
         = link_to "Symbolic Systems", "http://symsys.stanford.edu/"
         at
         = link_to "Stanford", "http://www.stanford.edu/"
       %li
         Born &amp; raised in
         = link_to "Mill Valley, CA", "http://www.youtube.com/watch?v=w-YaWE0zu-c"
+  %p 
+    Check my 
+    = link_to "portfolio", "/portfolio"
+    to see some examples of past work.
+
   %p.links
     Follow or contact me:
     = link_to "Twitter", "http://twitter.com/burnto"
@@ -43,3 +46,4 @@
     = link_to "LinkedIn", "http://www.linkedin.com/in/brentfitzgerald"
     |
     = link_to "github", "http://github.com/burnto"
+

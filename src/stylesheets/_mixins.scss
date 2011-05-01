@@ -1,0 +1,21 @@
+// Vertical gradient scss mixin
+
+@mixin gradient($start-color: #f3f3f3, $end-color: #fcfcfc) {
+  background: $start-color; // for non-css3 browsers
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}'); // ie 
+  background: -webkit-gradient(linear, left top, left bottom, from($start-color), to($end-color)); // webkit 
+  background: -moz-linear-gradient(top,  $start-color,  $end-color); // ff 
+}
+
+// Image replacement scss mixin
+
+@mixin image_replace($img, $width, $height, $x: 0, $y: 0) {
+  display: block;
+  background: image-url($img) no-repeat $x $y;
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  text-indent: -9999em; 
+}
+
+

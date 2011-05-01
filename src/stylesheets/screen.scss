@@ -1,7 +1,9 @@
 
+@import "mixins";
+
 html, body {
-  margin: 10px;
   padding: 0;
+  margin: 0;
   font-family: 'PT Sans', sans-serif;
   line-height: 32px;
   color: black;
@@ -9,81 +11,20 @@ html, body {
   background-color: white;
 }
 
-h2 {
-  line-height: 140%;
+body {
+  margin: 40px;
 }
 
-#page {
-  margin: 80px auto;
-  width: 100%;
-  max-width: 800px;
-  min-width: 300px;
-}
-
-#portfolio section {
-//  padding: 30px 0;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 40px;
-
-  .media {
-    max-width: 610px;
-    float: left;
-    margin: 5px 5px 10px;
-    .slideshow, .pic {
-      background-color: white;
-      overflow: hidden;
-      height: 408px;
-      width: 610px;
-      border: 1px solid #ccc;
-
-      box-shadow: 0 3px 7px #888;
-      -moz-box-shadow: 0 3px 7px #888;
-      -webkit-box-shadow: 0 3px 7px #888;
-    }
-    .slideshow {
-      cursor: pointer;
-    }
-    .nav {
-      margin: 12px 0 0 1px;
-      text-align: center;
-      a {
-        margin-right: .2em;
-        display: block;
-        text-indent: -1000px;
-        float: left;
-        height: 1.3em;
-        width: 1.3em;
-        background-color: rgba(0,152,231,0.5);
-        text-decoration: none;
-
-        &.activeSlide {
-          background-color: rgba(0,152,231,1);
-          color: #666;
-          &:hover {
-            background-color: rgba(0,152,231,1);
-          }
-        }
-
-        &:hover {
-          background-color: yellow;
-        }
-      }
-    }
-
-
-  }
-
-
-
-  .content {
-    padding-top: 10px;
-    margin-left: 640px;
-    max-width: 40em;
-    min-width: 20em;
-
+@media screen and (max-width: 720px) {
+  body {
+    margin: 20px;
   }
 }
+
+header {
+  margin-bottom: 20px;
+}
+
 
 p, ul {
   margin: 0 0 10px 0;
@@ -107,11 +48,90 @@ a:hover {
 h1 {
   font-weight: bold;
   font-size: 36px;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 }
 
+.subhead {
+  margin-bottom: 27px;
+}
 
 h2 {
   margin: 0 0 .5em 0;
   font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  display: block;
+  background-color: #ccc;
+  color: transparent;
+  margin: 1em 0;
+}
+
+#page {
+  max-width: 640px;
+  min-width: 400px;
+  margin: auto;
+}
+
+
+#portfolio {
+  width: 640px;
+  section {
+    clear: both;
+    margin-bottom: 40px;
+
+    .content {
+      margin: 20px 0 100px;
+    }
+    
+    .media {
+      .slideshow, .pic {
+        background-color: white;
+        overflow: hidden;
+        height: 408px;
+        width: 610px;
+        border: 1px solid #ccc;
+
+        box-shadow: 0 3px 7px #888;
+        -moz-box-shadow: 0 3px 7px #888;
+        -webkit-box-shadow: 0 3px 7px #888;
+      }
+    }
+  }
+}
+
+
+.nav {
+  margin: 12px 0 0 1px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  a {
+    margin-right: .2em;
+    display: block;
+    text-indent: -1000px;
+    float: left;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: rgba(0,152,231,0.5);
+    text-decoration: none;
+
+    &.activeSlide {
+      background-color: rgba(0,152,231,1);
+      color: #666;
+      &:hover {
+        background-color: rgba(0,152,231,1);
+      }
+    }
+
+    &:hover {
+      background-color: yellow;
+    }
+  }
+}
+
+.slideshow {
+  cursor: pointer;
 }
