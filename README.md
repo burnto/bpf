@@ -1,1 +1,1 @@
-staticmatic-based project for my (Brent Fitzgerald's) homepage.
+staticmatic project for my homepage.
