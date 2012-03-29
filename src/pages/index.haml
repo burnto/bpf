@@ -1,17 +1,45 @@
+:ruby
+
 #bio
   %section
+    %h1
+      Brent Fitzgerald
     %p
-      Hi, my name is
-      %strong Brent Fitzgerald.
-      I'm a member of the founding team at
+      I'm the Director of Engineering at
       = succeed "," do
-        %a{:href => "http://sifteo.com/"} Sifteo
-      where I design and develop the software for Sifteo cubes &ndash; electronic, interactive tiles for play and learning.
+        %a{:href => "https://www.card.io/"} card.io
+      where I'm part of an awesome small team designing and developing the future of payments.
+    %p Previously:
+    %ul
+      %li
+        Director of Software for
+        = link_to "Sifteo", "http://sifteo.com"
+      %li
+        Co-founder of
+        = link_to "Taco Lab", "http://tacolab.com/"
+      %li
+        Design Chief &amp; Developer at
+        = link_to "Swivel", "http://www.crunchbase.com/company/swivel"
+      %li
+        Graduate Student Researcher at the
+        = link_to "MIT Media Lab", "http://media.mit.edu/"
+        in the
+        = link_to "Physical Language Workshop", "http://plw.media.mit.edu/"
+      %li
+        Designer at the
+        = link_to "Stanford School of Medicine", "http://med.stanford.edu/"
+      %li
+        Hapless undergraduate in
+        = link_to "Symbolic Systems", "http://symsys.stanford.edu/"
+        at
+        = link_to "Stanford", "http://www.stanford.edu/"
+      %li
+        Born &amp; raised in
+        = link_to "Mill Valley, CA", "http://www.youtube.com/watch?v=w-YaWE0zu-c"
   %p.links
-    = link_to "github",   "http://github.com/burnto"
-    = link_to "linkedin", "http://www.linkedin.com/in/brentfitzgerald"
-    = link_to "facebook", "http://www.facebook.com/brent.fitzgerald"
-    = link_to "twitter",  "http://twitter.com/burnto"
-    = link_to "flickr",   "http://flickr.com/photos/burnto"
-    = link_to "delicious", "http://delicious.com/burnto"
-
+    Follow or contact me:
+    = link_to "Twitter", "http://twitter.com/burnto"
+    |
+    = link_to "LinkedIn", "http://www.linkedin.com/in/brentfitzgerald"
+    |
+    = link_to "github", "http://github.com/burnto"
