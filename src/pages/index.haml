@@ -1,48 +1,39 @@
 :ruby
 
-%article.narrow
+%article
   %section
-    %p
-      I'm the Director of Engineering at
-      = succeed "," do
-        %a{:href => "https://www.card.io/"} card.io
-      where I work with a great team designing and developing payments for our mobile era.
-    %p Previously:
     %ul
       %li
-        Director of Software for
+        Senior MTS Software Engineer,
+        = link_to "PayPal", "https://paypal.com"
+      %li
+        Director of Engineering,
+        = link_to "card.io", "https://card.io"
+        (acquired by PayPal)
+      %li
+        Director of Software,
         = link_to "Sifteo", "http://sifteo.com"
       %li
-        Co-founder of
+        Co-founder,
         = link_to "Taco Lab", "http://tacolab.com/"
       %li
-        Design Chief &amp; Developer at
+        Design Chief &amp; Developer,
         = link_to "Swivel", "http://www.crunchbase.com/company/swivel"
       %li
-        Graduate Student Researcher at the
+        Graduate Student Researcher,
         = link_to "MIT Media Lab", "http://media.mit.edu/"
-        in the
-        = link_to "Physical Language Workshop", "http://plw.media.mit.edu/"
+        = link_to "PLW", "http://plw.media.mit.edu/"
       %li
-        Designer at the
-        = link_to "Stanford School of Medicine", "http://med.stanford.edu/"
+        Designer &amp; Developer,
+        = link_to "Stanford Med School", "http://med.stanford.edu/"
       %li
-        Undergraduate in
-        = link_to "Symbolic Systems", "http://symsys.stanford.edu/"
-        at
+        Undergraduate,
         = link_to "Stanford", "http://www.stanford.edu/"
-      %li
-        Born &amp; raised in
-        = link_to "Mill Valley, CA", "http://www.youtube.com/watch?v=w-YaWE0zu-c"
-  %p 
-    Check my 
-    = link_to "portfolio", "/portfolio"
-    to see some examples of past work.
+        = link_to "Symbolic Systems", "http://symsys.stanford.edu/"
 
   %p.links
-    Follow or contact me:
-    = link_to "Twitter", "http://twitter.com/burnto"
+    = link_to "portfolio", "/portfolio"
     |
-    = link_to "LinkedIn", "http://www.linkedin.com/in/brentfitzgerald"
+    = link_to "linkedin", "http://www.linkedin.com/in/brentfitzgerald"
     |
     = link_to "github", "http://github.com/burnto"
